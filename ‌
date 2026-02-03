@@ -48,21 +48,28 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "ipbaz.ping-box.com": "188.114.98.0",
-      "s7.rookari.com": "45.94.213.185",
-      "d2fog4flcfgb8c.cloudfront.net": [
-        "2600:9000:2136:b200:a:4072:f700:21",
-        "2600:9000:2136:7200:a:4072:f700:21",
-        "2600:9000:2136:e200:a:4072:f700:21",
-        "2600:9000:2136:d400:a:4072:f700:21",
-        "2600:9000:2136:4a00:a:4072:f700:21",
-        "2600:9000:2136:7000:a:4072:f700:21",
-        "2600:9000:2136:7a00:a:4072:f700:21",
-        "2600:9000:2136:fc00:a:4072:f700:21",
-        "13.35.179.58",
-        "13.35.179.196",
-        "13.35.179.178",
-        "13.35.179.70"
+      "fsl.narton.ir": "151.101.129.194",
+      "master3.ariagsmm.site": "94.183.173.159",
+      "mo.fastsnap.info": "5.239.245.204",
+      "speedtest.net": [
+        "151.101.2.219",
+        "151.101.66.219",
+        "151.101.130.219",
+        "151.101.194.219",
+        "2a04:4e42:600::731",
+        "2a04:4e42::731",
+        "2a04:4e42:400::731",
+        "2a04:4e42:200::731"
+      ],
+      "python.org": [
+        "151.101.0.223",
+        "151.101.64.223",
+        "151.101.192.223",
+        "151.101.128.223",
+        "2a04:4e42:400::223",
+        "2a04:4e42:200::223",
+        "2a04:4e42:600::223",
+        "2a04:4e42::223"
       ]
     },
     "servers": [
@@ -101,8 +108,11 @@
         "userLevel": 8
       },
       "sniffing": {
-        "destOverride": [],
-        "enabled": false,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
         "routeOnly": false
       },
       "tag": "socks"
@@ -138,12 +148,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ipbaz.ping-box.com",
-            "port": 8443,
+            "address": "fsl.narton.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "829658bf-03c4-4c28-81e9-dd6ea141b2d0",
+                "id": "dd0cfef0-fda9-47ec-8a65-49d7bc004f82",
                 "level": 8
               }
             ]
@@ -158,24 +168,21 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
         "tlsSettings": {
-          "allowInsecure": true,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net",
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "serverName": "mitivpn3.global.ssl.fastly.net",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net"
+            "Host": "mitivpn3.global.ssl.fastly.net"
           },
-          "path": "mehrosaboran?ed=2560"
+          "path": "/--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN"
         }
       },
       "tag": "proxy-1"
@@ -189,172 +196,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.64.152.23",
-            "port": 80,
+            "address": "master3.ariagsmm.site",
+            "port": 1902,
             "users": [
               {
                 "encryption": "none",
-                "id": "94b285fb-fb5b-4b82-944a-f97548ab622e",
+                "id": "3ce52af4-b013-4ff3-8d42-32f26019a3f1",
                 "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "www.speedtest.net.b.1.speedtest2029.com.v2logy.ir."
-          },
-          "path": "/ali"
-        }
-      },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fef4a93d-eb4f-4657-b56b-32a0dc060045",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "dev.twistsparrow.xyz",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.98.0",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fef4a93d-eb4f-4657-b56b-32a0dc060045",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "dev.twistsparrow.xyz",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dev.twistsparrow.xyz"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ipbaz.ping-box.com",
-            "port": 8443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "829658bf-03c4-4c28-81e9-dd6ea141b2d0",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net"
-          },
-          "path": "/MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN?ed=2560"
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "s7.rookari.com",
-            "port": 9013,
-            "users": [
-              {
-                "id": "12799d94-9e55-4de1-b238-0b44f32caf7f",
-                "level": 8,
-                "security": "auto"
               }
             ]
           }
@@ -362,13 +210,12 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "none",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
@@ -379,7 +226,9 @@
                 "Connection": [
                   "keep-alive"
                 ],
-                "Host": [],
+                "Host": [
+                  "varzesh3.com"
+                ],
                 "Pragma": "no-cache",
                 "Accept-Encoding": [
                   "gzip, deflate"
@@ -398,54 +247,7 @@
           }
         }
       },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "d2fog4flcfgb8c.cloudfront.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "e070e567-7996-45a9-9016-0143420946ef",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "d2fog4flcfgb8c.cloudfront.net",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/8536cb1926c24bbc99d7bd93350ec564"
-        }
-      },
-      "tag": "proxy-7"
+      "tag": "proxy-2"
     },
     {
       "mux": {
@@ -456,12 +258,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ipbaz.ping-box.com",
-            "port": 8443,
+            "address": "fsl.narton.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "829658bf-03c4-4c28-81e9-dd6ea141b2d0",
+                "id": "dd0cfef0-fda9-47ec-8a65-49d7bc004f82",
                 "level": 8
               }
             ]
@@ -476,27 +278,197 @@
           "happyEyeballs": {
             "interleave": 2,
             "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
+            "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
         },
         "tlsSettings": {
           "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
           "fingerprint": "chrome",
-          "serverName": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net",
+          "serverName": "mitivpn-s1.global.ssl.fastly.net",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net"
+            "Host": "mitivpn-s1.global.ssl.fastly.net"
           },
-          "path": "/vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560"
+          "path": "/--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN"
         }
       },
-      "tag": "proxy-8"
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "mo.fastsnap.info",
+            "port": 15934,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7c6e88bc-cb90-4062-9861-3c97e8527e8a",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "46.38.146.167",
+            "port": 9092,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "34dae96c-1a41-434f-94b6-5507c3a6d318",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "filmnet.ir"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "speedtest.net",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a26bbed7-a286-4840-84bc-dc102c526777",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "xhttpSettings": {
+          "host": "iran.boltboost.gg",
+          "mode": "auto",
+          "path": "/category/music"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "python.org",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7449519c-e462-46e4-a143-519996d16d9b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "xhttpSettings": {
+          "host": "waslima.openwrld.tk",
+          "mode": "auto",
+          "path": "/?ed=2052"
+        }
+      },
+      "tag": "proxy-7"
     },
     {
       "protocol": "freedom",
@@ -515,7 +487,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "🔥",
+  "remarks": "💚",
   "routing": {
     "balancers": [
       {
