@@ -48,27 +48,14 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "master3.ariagsmm.site": "94.183.173.159",
-      "db.moviesdb.ir": "85.133.197.235",
-      "envip.farsgsm.com": "178.239.148.87",
-      "speedtest.net": [
-        "151.101.194.219",
-        "151.101.66.219",
-        "151.101.2.219",
-        "151.101.130.219",
-        "2a04:4e42::731",
-        "2a04:4e42:200::731",
-        "2a04:4e42:400::731",
-        "2a04:4e42:600::731"
-      ]
+      "nl.zeepo.ir": "91.98.90.142"
     },
     "servers": [
-      "8.8.8.8",
+      "1.1.1.1",
       {
-        "address": "8.8.8.8",
+        "address": "1.1.1.1",
         "domains": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
+          "geosite:google"
         ]
       },
       {
@@ -79,7 +66,10 @@
           "domain:dot.pub",
           "domain:360.cn",
           "domain:onedns.net",
-          "geosite:ir"
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
         ],
         "skipFallback": true,
         "tag": "domestic-dns"
@@ -106,15 +96,6 @@
         "routeOnly": false
       },
       "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "userLevel": 8
-      },
-      "tag": "http"
     }
   ],
   "log": {
@@ -138,167 +119,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "master3.ariagsmm.site",
-            "port": 1902,
+            "address": "nl.zeepo.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "3ce52af4-b013-4ff3-8d42-32f26019a3f1",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "varzesh3.com"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
-          }
-        }
-      },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "81.12.32.45",
-            "port": 35188,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5089aad4-eadd-4dc3-a094-508760f853ab",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "db.moviesdb.ir",
-            "port": 9828,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "20df8c30-c07a-494e-b83d-4af21ee57788",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "pro30afzar.com"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
-          }
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "envip.farsgsm.com",
-            "port": 5509,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "3ce52af4-b013-4ff3-8d42-32f26019a3f1",
+                "flow": "xtls-rprx-vision",
+                "id": "b4f47365-fa37-3714-98c6-74e52c0ec504",
                 "level": 8
               }
             ]
@@ -309,9 +136,10 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "serverName": "refersion.com",
+          "fingerprint": "firefox",
+          "publicKey": "SySMR9yW2kna78L7nmfkSYeQ-DkS7nIx98AsTsHy0gM",
+          "serverName": "tgju.org",
+          "shortId": "7fec027d1852df40",
           "show": false
         },
         "security": "reality",
@@ -330,7 +158,7 @@
           }
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-1"
     },
     {
       "mux": {
@@ -341,12 +169,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "speedtest.net",
-            "port": 80,
+            "address": "85.133.237.216",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "a26bbed7-a286-4840-84bc-dc102c526777",
+                "flow": "",
+                "id": "4763fe93-80db-4b99-9539-e5101b424223",
                 "level": 8
               }
             ]
@@ -354,23 +183,14 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
-        },
-        "xhttpSettings": {
-          "host": "iran.boltboost.gg",
-          "mode": "auto",
-          "path": "/category/music"
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-2"
     },
     {
       "protocol": "freedom",
@@ -389,7 +209,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "❤️",
+  "remarks": "🌎",
   "routing": {
     "balancers": [
       {
@@ -405,17 +225,16 @@
     "domainStrategy": "AsIs",
     "rules": [
       {
-        "balancerTag": "proxy-round",
-        "domain": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
-        ],
-        "type": "field"
-      },
-      {
         "network": "udp",
         "outboundTag": "block",
         "port": "443",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "domain": [
+          "geosite:google"
+        ],
         "type": "field"
       },
       {
@@ -486,14 +305,14 @@
       },
       {
         "ip": [
-          "geoip:ir"
+          "geoip:cn"
         ],
         "outboundTag": "direct",
         "type": "field"
       },
       {
         "domain": [
-          "geosite:ir"
+          "geosite:cn"
         ],
         "outboundTag": "direct",
         "type": "field"
