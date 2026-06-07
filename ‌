@@ -47,7 +47,26 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ]
+      ],
+      "p2.persianfilmdl.ir": "185.97.119.60",
+      "www.speedtest.net": "104.17.148.22",
+      "up3.netmet.best": [
+        "104.17.135.117",
+        "104.17.134.117",
+        "2606:4700::6811:8675",
+        "2606:4700::6811:8775"
+      ],
+      "farance.poonehi.ir": "38.54.122.180",
+      "bolgharestan.poonehi.ir": "38.60.247.245",
+      "sh8.persianfilmdl.ir": "95.38.179.172",
+      "turboping.persianfilmdl.ir": "185.143.232.35",
+      "up.netmet.best": [
+        "188.114.98.0",
+        "188.114.99.0",
+        "2a06:98c1:310b::ac40:9bd1",
+        "2a06:98c1:3100::6812:202f"
+      ],
+      "sooed.poonehi.ir": "89.22.237.150"
     },
     "servers": [
       "8.8.8.8",
@@ -98,36 +117,34 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "91fea334-517d-4892-ac50-2dd4a2e67d97",
-                "level": 8
-              }
-            ]
+            "address": "p2.persianfilmdl.ir",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "ikvtd_af7YeVfy8278vn_g",
+            "port": 4003
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fsayhello.zirakomamle.com",
-          "show": false
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "fsayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-1"
@@ -141,13 +158,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.60",
-            "port": 443,
+            "address": "www.speedtest.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "91fea334-517d-4892-ac50-2dd4a2e67d97",
+                "id": "42b5b45d-d86e-41d7-b6a4-d1abc0e24da8",
                 "level": 8
               }
             ]
@@ -157,16 +173,30 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "hamat.zirakomamle.com",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "farance.poonehi.ir",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "hamat.zirakomamle.com"
+            "Host": "farance.poonehi.ir"
           },
-          "path": "/tunnel"
+          "path": "/"
         }
       },
       "tag": "proxy-2"
@@ -180,13 +210,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
+            "address": "up3.netmet.best",
+            "port": 2086,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "e6825a31-4d56-443f-a905-ea52e29fecba",
+                "id": "b41a01af-c59b-4d4a-9b3a-e4036ad0c628",
                 "level": 8
               }
             ]
@@ -194,18 +223,19 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "turkye.zirakomamle.com",
-          "show": false
+        "httpupgradeSettings": {
+          "host": "fast32.apkdownloadcenter.ir",
+          "path": "/?ed=2086"
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "turkye.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "network": "httpupgrade",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         }
       },
       "tag": "proxy-3"
@@ -219,13 +249,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
+            "address": "farance.poonehi.ir",
+            "port": 57646,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "fba42d63-f000-47ab-92f1-5bf68c7adca4",
+                "id": "1fa5adfd-d097-4342-9893-5d99dd53764a",
                 "level": 8
               }
             ]
@@ -233,18 +262,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
+        "network": "xhttp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "xhttpSettings": {
+          "host": "",
+          "mode": "auto",
+          "path": "/"
         }
       },
       "tag": "proxy-4"
@@ -258,13 +289,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
+            "address": "www.speedtest.net",
+            "port": 2087,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "90b40c8d-46aa-4372-928c-e8d6069c8278",
+                "id": "b91c0d18-ba4e-4f4c-802d-535b71c7024f",
                 "level": 8
               }
             ]
@@ -274,16 +304,30 @@
       "streamSettings": {
         "network": "ws",
         "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tlsSettings": {
           "allowInsecure": false,
-          "serverName": "nl-say.zirakomamle.com",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "sooed.poonehi.ir",
           "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "nl-say.zirakomamle.com"
+            "Host": "sooed.poonehi.ir"
           },
-          "path": "/tunnel"
+          "path": "/"
         }
       },
       "tag": "proxy-5"
@@ -297,13 +341,52 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.143.232.201",
-            "port": 80,
+            "address": "bolgharestan.poonehi.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "b13ffbc8-9ad1-410e-82bc-06f7348c1bd7",
+                "id": "bdf3ea45-47f8-40d5-b0a0-0d045aa232ba",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "xhttpSettings": {
+          "host": "",
+          "mode": "auto",
+          "path": "/"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7ca4f9b7-e825-45c3-8ad9-9ede41e6481a",
                 "level": 8
               }
             ]
@@ -312,14 +395,434 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "bolgharestan.poonehi.ir",
+          "show": false
+        },
         "wsSettings": {
           "headers": {
-            "Host": "moj.mojraz.shop"
+            "Host": "bolgharestan.poonehi.ir"
           },
-          "path": "/status"
+          "path": "/"
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "sh8.persianfilmdl.ir",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "ikvtd_af7YeVfy8278vn_g",
+            "port": 4001
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "turboping.persianfilmdl.ir",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b41a01af-c59b-4d4a-9b3a-e4036ad0c628",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "se14.pavnito.ir"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "p2.persianfilmdl.ir",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "ikvtd_af7YeVfy8278vn_g",
+            "port": 4004
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "p2.persianfilmdl.ir",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "ikvtd_af7YeVfy8278vn_g",
+            "port": 4005
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "turboping.persianfilmdl.ir",
+            "port": 2095,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b41a01af-c59b-4d4a-9b3a-e4036ad0c628",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "se12.pavnito.ir"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-12"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "p2.persianfilmdl.ir",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "ikvtd_af7YeVfy8278vn_g",
+            "port": 4002
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "turboping.persianfilmdl.ir",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b41a01af-c59b-4d4a-9b3a-e4036ad0c628",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "se16.pavnito.ir"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "up.netmet.best",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b41a01af-c59b-4d4a-9b3a-e4036ad0c628",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "fast12.apkdownloadcenter.ir",
+          "path": "/?ed=2052"
+        },
+        "network": "httpupgrade",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sooed.poonehi.ir",
+            "port": 54650,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fc0e212d-d56b-4c44-97e3-62328efa39c2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sooed.poonehi.ir",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b0333cd3-bbc0-4746-a88e-ff153c54005e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "7CPKa_4emDM25mNh0gDAD2pEphb-7NVUWv454aedYy0",
+          "serverName": "play.google.com",
+          "shortId": "194f1ced6b5b9a19",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-17"
     },
     {
       "protocol": "freedom",
