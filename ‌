@@ -48,9 +48,13 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "erosan.appleseraj.ir": "104.16.63.25",
-      "professional.lynavo.org": "188.114.97.6",
-      "www.speedtest.net": "104.17.147.22"
+      "ahon2.appleseraj.ir": "213.226.71.56",
+      "germ.appleseraj.ir": "213.226.71.27",
+      "www.speedtest.net": [
+        "104.17.147.22",
+        "104.17.148.22"
+      ],
+      "sooed.poonehi.ir": "89.22.237.150"
     },
     "servers": [
       "8.8.8.8",
@@ -89,7 +93,7 @@
   },
   "observatory": {
     "enableConcurrency": true,
-    "probeInterval": "10m",
+    "probeInterval": "3m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
       "proxy-"
@@ -105,12 +109,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.6",
-            "port": 443,
+            "address": "ahon2.appleseraj.ir",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "id": "5598261f-283e-4f4e-89e7-8cf5277001b8",
+                "id": "cc0ba5bf-8ba4-4643-bcb6-977aba462dff",
                 "level": 8
               }
             ]
@@ -118,18 +122,30 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "serverName": "fsayhello.zirakomamle.com",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "viPLyCxPYi2dTCL5v6LBQfEAE-eK791IKFAu96hyH1A",
+          "serverName": "status.play.google.com",
+          "shortId": "4b667de0",
+          "show": false,
+          "spiderX": "/g233Ado7jsE1vtl"
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "fsayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-1"
@@ -143,12 +159,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
+            "address": "germ.appleseraj.ir",
+            "port": 8080,
             "users": [
               {
                 "encryption": "none",
-                "id": "5598261f-283e-4f4e-89e7-8cf5277001b8",
+                "id": "279980cb-cf24-4613-a853-88c44505b961",
                 "level": 8
               }
             ]
@@ -156,822 +172,32 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "serverName": "fsayhello.zirakomamle.com",
+          "fingerprint": "firefox",
+          "publicKey": "EETDUWLtNOg2CiA1-TxlrSFStvBWbmIe50bz5uGIAiQ",
+          "serverName": "status.play.google.com",
+          "shortId": "fdc5",
           "show": false
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "fsayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
       "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "12ecff51-719c-4088-bb7f-32c8c6522a12",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nl-say.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "nl-say.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "967d5507-21e2-4c28-8c3d-0c6c18a8fb55",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hamat.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hamat.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "40d06532-fd50-4ffb-8522-da8bca4320a3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pariskocholo.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "pariskocholo.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.60",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "967d5507-21e2-4c28-8c3d-0c6c18a8fb55",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hamat.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hamat.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "erosan.appleseraj.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "96121277-c3ea-496d-9651-76328346e8a6",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "serverName": "ahonn.appleseraj.ir",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "ahonn.appleseraj.ir"
-          },
-          "path": "/?ed=2048"
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f11b261-19a9-4d18-8a79-11e85e6202c3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "afinland.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "afinland.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f0c056c9-2e40-4517-8d76-f5752838a38b",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "208.103.161.17",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5598261f-283e-4f4e-89e7-8cf5277001b8",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "fsayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "fsayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f11b261-19a9-4d18-8a79-11e85e6202c3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "afinland.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "afinland.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "208.103.161.17",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f0c056c9-2e40-4517-8d76-f5752838a38b",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "erosan.appleseraj.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "adc31402-c243-4f51-98ae-880ec94873a8",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "serverName": "germ.appleseraj.ir",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "germ.appleseraj.ir"
-          },
-          "path": "/?ed=2048"
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "f0c056c9-2e40-4517-8d76-f5752838a38b",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "erosan.appleseraj.ir",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "08561b1e-9526-49d6-9883-ec5127476923",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "serverName": "ahon2.appleseraj.ir",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "ahon2.appleseraj.ir"
-          },
-          "path": "/?ed=2048"
-        }
-      },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "professional.lynavo.org",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b4958102-88d0-4b8c-be7c-c1ad4ddd73f6",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h2"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "api.lynavo.org",
-          "show": false
-        },
-        "xhttpSettings": {
-          "host": "",
-          "path": "/"
-        }
-      },
-      "tag": "proxy-16"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "12ecff51-719c-4088-bb7f-32c8c6522a12",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "nl-say.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "nl-say.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-17"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ebbfb40a-2930-4c4d-8f64-829392ba8e6a",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hamarus.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hamarus.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-18"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "40d06532-fd50-4ffb-8522-da8bca4320a3",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "pariskocholo.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "pariskocholo.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-19"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "208.103.161.17",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fadd1b2f-a120-4eee-be5a-0c277c1d2a15",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "usasaro.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "usasaro.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-20"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "ebbfb40a-2930-4c4d-8f64-829392ba8e6a",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hamarus.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hamarus.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-21"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "967d5507-21e2-4c28-8c3d-0c6c18a8fb55",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "hamat.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "hamat.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-22"
     },
     {
       "mux": {
@@ -1023,7 +249,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-23"
+      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -1034,12 +260,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.114.97.6",
-            "port": 443,
+            "address": "sooed.poonehi.ir",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
-                "id": "fadd1b2f-a120-4eee-be5a-0c277c1d2a15",
+                "id": "b0333cd3-bbc0-4746-a88e-ff153c54005e",
                 "level": 8
               }
             ]
@@ -1047,21 +273,33 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "serverName": "usasaro.zirakomamle.com",
-          "show": false
+          "fingerprint": "firefox",
+          "publicKey": "7CPKa_4emDM25mNh0gDAD2pEphb-7NVUWv454aedYy0",
+          "serverName": "play.google.com",
+          "shortId": "194f1ced6b5b9a19",
+          "show": false,
+          "spiderX": "/"
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "usasaro.zirakomamle.com"
-          },
-          "path": "/tunnel"
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
-      "tag": "proxy-24"
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -1072,12 +310,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.130.125.198",
-            "port": 443,
+            "address": "sooed.poonehi.ir",
+            "port": 54650,
             "users": [
               {
                 "encryption": "none",
-                "id": "fadd1b2f-a120-4eee-be5a-0c277c1d2a15",
+                "id": "fc0e212d-d56b-4c44-97e3-62328efa39c2",
                 "level": 8
               }
             ]
@@ -1085,97 +323,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "usasaro.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "usasaro.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-25"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d0695ad1-51df-4bb3-9f1f-da171585ac09",
-                "level": 8
-              }
-            ]
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "turkye.zirakomamle.com",
-          "show": false
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "turkye.zirakomamle.com"
-          },
-          "path": "/tunnel"
-        }
-      },
-      "tag": "proxy-26"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.114.97.6",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "d0695ad1-51df-4bb3-9f1f-da171585ac09",
-                "level": 8
-              }
-            ]
+        "tcpSettings": {
+          "header": {
+            "type": "none"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "turkye.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "turkye.zirakomamle.com"
-          },
-          "path": "/tunnel"
         }
       },
-      "tag": "proxy-27"
+      "tag": "proxy-5"
     },
     {
       "protocol": "freedom",
