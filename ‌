@@ -89,7 +89,7 @@
   },
   "observatory": {
     "enableConcurrency": true,
-    "probeInterval": "3m",
+    "probeInterval": "10m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
       "proxy-"
