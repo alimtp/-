@@ -1,5 +1,5 @@
 {
-"_comment": "2026-6-24T12:37:00",
+  "_comment": "2026-08-12T08:36:00",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -48,14 +48,7 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ],
-      "ahon2.appleseraj.ir": "213.226.71.56",
-      "germ.appleseraj.ir": "213.226.71.27",
-      "www.speedtest.net": [
-        "104.17.147.22",
-        "104.17.148.22"
-      ],
-      "sooed.poonehi.ir": "89.22.237.150"
+      ]
     },
     "servers": [
       "8.8.8.8",
@@ -94,7 +87,7 @@
   },
   "observatory": {
     "enableConcurrency": true,
-    "probeInterval": "3m",
+    "probeInterval": "10m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
       "proxy-"
@@ -110,12 +103,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ahon2.appleseraj.ir",
-            "port": 8080,
+            "address": "104.17.122.116",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "cc0ba5bf-8ba4-4643-bcb6-977aba462dff",
+                "flow": "",
+                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
                 "level": 8
               }
             ]
@@ -123,30 +117,22 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "viPLyCxPYi2dTCL5v6LBQfEAE-eK791IKFAu96hyH1A",
-          "serverName": "status.play.google.com",
-          "shortId": "4b667de0",
-          "show": false,
-          "spiderX": "/g233Ado7jsE1vtl"
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Nl-say.zirakomamle.com",
+          "show": false
         },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "Nl-say.zirakomamle.com"
+          },
+          "path": "/grapql/?ed=2560"
         }
       },
       "tag": "proxy-1"
@@ -156,42 +142,21 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "germ.appleseraj.ir",
-            "port": 8080,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "279980cb-cf24-4613-a853-88c44505b961",
-                "level": 8
-              }
-            ]
+            "address": "185.250.38.62",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7IGvbYdEsIZCEUme7OSrDp",
+            "port": 2342
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "EETDUWLtNOg2CiA1-TxlrSFStvBWbmIe50bz5uGIAiQ",
-          "serverName": "status.play.google.com",
-          "shortId": "fdc5",
-          "show": false
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -205,17 +170,17 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2087,
+            "address": "104.19.47.238",
+            "port": 8080,
             "users": [
               {
-                "encryption": "none",
-                "id": "b91c0d18-ba4e-4f4c-802d-535b71c7024f",
-                "level": 8
+                "id": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
+                "level": 8,
+                "security": "auto"
               }
             ]
           }
@@ -223,124 +188,14 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "sooed.poonehi.ir",
-          "show": false
-        },
         "wsSettings": {
           "headers": {
-            "Host": "sooed.poonehi.ir"
+            "Host": "oiictw.yydsii.com"
           },
-          "path": "/"
+          "path": "/?ed=2048&Telegram🇨🇳 @WangCai2"
         }
       },
       "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sooed.poonehi.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b0333cd3-bbc0-4746-a88e-ff153c54005e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "7CPKa_4emDM25mNh0gDAD2pEphb-7NVUWv454aedYy0",
-          "serverName": "play.google.com",
-          "shortId": "194f1ced6b5b9a19",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "sooed.poonehi.ir",
-            "port": 54650,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "fc0e212d-d56b-4c44-97e3-62328efa39c2",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-5"
     },
     {
       "protocol": "freedom",
@@ -359,7 +214,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "⭐️",
+  "remarks": "test",
   "routing": {
     "balancers": [
       {
