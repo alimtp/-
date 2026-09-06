@@ -1,19 +1,273 @@
-
 {
-  "type": "amneziawg",
-  "version": 1,
-  "servers": [
-    {
-      "name": "1",
-      "config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDE3Mi4xNi4wLjIvMzIKQWRkcmVzcyA9IDI2MDY6NDcwMDoxMTA6OGUzNDpjNmQ3OjljYzk6Y2U1OmI0MS8xMjgKUHJpdmF0ZUtleSA9IDJIVE5kN05aK3pOdjJOQWdFRFRTTyttVXF2bHppek4xRXpSQ2E0dmYrV1E9Ck1UVSA9IDEyODAKSmMgPSA0CkptaW4gPSA0MApKbWF4ID0gNzAKSDEgPSAxCkgyID0gMgpIMyA9IDMKSDQgPSA0CkkxID0gPGIgMHg0OTRlNTY0OTU0NDUyMDczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDIwNTM0OTUwMmYzMjJlMzAwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTRkNjE3ODJkNDY2ZjcyNzc2MTcyNjQ3MzNhMjAzNzMwMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2MTYzNzQzYTIwM2M3MzY5NzAzYTYxNmM2OTYzNjU0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UwZDBhNDM2ZjZlNzQ2NTZlNzQyZDU0Nzk3MDY1M2EyMDYxNzA3MDZjNjk2MzYxNzQ2OTZmNmUyZjczNjQ3MDBkMGE0MzZmNmU3NDY1NmU3NDJkNGM2NTZlNjc3NDY4M2EyMDMwMGQwYTBkMGE-CkkyID0gPGIgMHg1MzQ5NTAyZjMyMmUzMDIwMzEzMDMwMjA1NDcyNzk2OTZlNjcwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgoKW1BlZXJdClB1YmxpY0tleSA9IGJtWE9DK0YxRnhFTUY5ZHlpSzJINS8xU1V0ekgwSnVWbzUxaDJ3UGZneW89CkVuZHBvaW50ID0gMTYyLjE1OS4xOTIuMToyNDA4CkFsbG93ZWRJUHMgPSAwLjAuMC4wLzAsIDo6LzAK"
+  "_comment": "2026-09-06T14:00:00",
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "dns.alidns.com": [
+        "223.5.5.5",
+        "223.6.6.6",
+        "2400:3200::1",
+        "2400:3200:baba::1"
+      ],
+      "one.one.one.one": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "dns.cloudflare.com": [
+        "104.16.132.229",
+        "104.16.133.229",
+        "2606:4700::6810:84e5",
+        "2606:4700::6810:85e5"
+      ],
+      "cloudflare-dns.com": [
+        "104.16.248.249",
+        "104.16.249.249",
+        "2606:4700::6810:f8f9",
+        "2606:4700::6810:f9f9"
+      ],
+      "dot.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dns.google": [
+        "8.8.8.8",
+        "8.8.4.4",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "dns.quad9.net": [
+        "9.9.9.9",
+        "149.112.112.112",
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "common.dot.dns.yandex.net": [
+        "77.88.8.8",
+        "77.88.8.1",
+        "2a02:6b8::feed:0ff",
+        "2a02:6b8:0:1::feed:0ff"
+      ],
+      "ch-zur.pvdata.host": [
+        "45.148.4.3",
+        "80.239.178.125"
+      ]
     },
+    "servers": [
+      "8.8.8.8",
+      {
+        "address": "8.4.4.8",
+        "domains": [
+          "domain:ir",
+          "geosite:category-ir"
+        ],
+        "skipFallback": true,
+        "tag": "domestic-dns"
+      }
+    ],
+    "tag": "dns-module"
+  },
+  "inbounds": [
     {
-      "name": "2",
-      "config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjE4Ny4xOTIuNTAvMzAKUHJpdmF0ZUtleSA9IG1NdFMxeXZ3VkNpb0NTemVPZlJuVnZKdDN2a3NkVWhXc0VVUDFSS0Jya1E9Ck1UVSA9IDEyODAKSmMgPSA0CkptaW4gPSA0MApKbWF4ID0gNzAKSDEgPSAxCkgyID0gMgpIMyA9IDMKSDQgPSA0CkkxID0gPGIgMHg0OTRlNTY0OTU0NDUyMDczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDIwNTM0OTUwMmYzMjJlMzAwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTRkNjE3ODJkNDY2ZjcyNzc2MTcyNjQ3MzNhMjAzNzMwMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2MTYzNzQzYTIwM2M3MzY5NzAzYTYxNmM2OTYzNjU0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UwZDBhNDM2ZjZlNzQ2NTZlNzQyZDU0Nzk3MDY1M2EyMDYxNzA3MDZjNjk2MzYxNzQ2OTZmNmUyZjczNjQ3MDBkMGE0MzZmNmU3NDY1NmU3NDJkNGM2NTZlNjc3NDY4M2EyMDMwMGQwYTBkMGE-CkkyID0gPGIgMHg1MzQ5NTAyZjMyMmUzMDIwMzEzMDMwMjA1NDcyNzk2OTZlNjcwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgoKW1BlZXJdClB1YmxpY0tleSA9IEZFdUVKb09ZczM4b1ZXQ3FoMXI1YVNwT3pkVmEvNG81OWJlQURLb21SR009CkVuZHBvaW50ID0gNTAuNy4xNTEuNjc6NDMyOTMKQWxsb3dlZElQcyA9IDAuMC4wLjAvMCwgOjovMApQZXJzaXN0ZW50S2VlcGFsaXZlID0gMTUwMAo"
-    },
-    {
-      "name": "3",
-      "config": "W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjIuMC4yLzMyClByaXZhdGVLZXkgPSBTRU0vV0tWSVI2ODg0R3NsdXRIWkErN0VPODQzbVo4czNHaE9UTkpiU1ZFPQpNVFUgPSAxMjgwCkpjID0gNApKbWluID0gNDAKSm1heCA9IDcwCkgxID0gMQpIMiA9IDIKSDMgPSAzCkg0ID0gNApJMSA9IDxiIDB4NDk0ZTU2NDk1NDQ1MjA3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQyMDUzNDk1MDJmMzIyZTMwMGQwYTU2Njk2MTNhMjA1MzQ5NTAyZjMyMmUzMDJmNTU0NDUwMjA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNiNjI3MjYxNmU2MzY4M2Q3YTM5Njg0NzM0NjI0YjM3MzczNjYxNzM2NDY4NjQ3MzBkMGE0ZDYxNzgyZDQ2NmY3Mjc3NjE3MjY0NzMzYTIwMzczMDBkMGE1NDZmM2EyMDQyNmY2MjIwM2M3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQzZTBkMGE0NjcyNmY2ZDNhMjA0MTZjNjk2MzY1MjAzYzczNjk3MDNhNjE2YzY5NjM2NTQwNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlM2I3NDYxNjczZDMxMzkzMjM4MzMzMDMxMzczNzM0MGQwYTQzNjE2YzZjMmQ0OTQ0M2EyMDYxMzgzNDYyMzQ2MzM3MzY2NTM2MzYzNzMxMzA0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkMGQwYTQzNTM2NTcxM2EyMDMzMzEzNDMxMzUzOTIwNDk0ZTU2NDk1NDQ1MGQwYTQzNmY2ZTc0NjE2Mzc0M2EyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlMGQwYTQzNmY2ZTc0NjU2ZTc0MmQ1NDc5NzA2NTNhMjA2MTcwNzA2YzY5NjM2MTc0Njk2ZjZlMmY3MzY0NzAwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgpJMiA9IDxiIDB4NTM0OTUwMmYzMjJlMzAyMDMxMzAzMDIwNTQ3Mjc5Njk2ZTY3MGQwYTU2Njk2MTNhMjA1MzQ5NTAyZjMyMmUzMDJmNTU0NDUwMjA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNiNjI3MjYxNmU2MzY4M2Q3YTM5Njg0NzM0NjI0YjM3MzczNjYxNzM2NDY4NjQ3MzBkMGE1NDZmM2EyMDQyNmY2MjIwM2M3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQzZTBkMGE0NjcyNmY2ZDNhMjA0MTZjNjk2MzY1MjAzYzczNjk3MDNhNjE2YzY5NjM2NTQwNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlM2I3NDYxNjczZDMxMzkzMjM4MzMzMDMxMzczNzM0MGQwYTQzNjE2YzZjMmQ0OTQ0M2EyMDYxMzgzNDYyMzQ2MzM3MzY2NTM2MzYzNzMxMzA0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkMGQwYTQzNTM2NTcxM2EyMDMzMzEzNDMxMzUzOTIwNDk0ZTU2NDk1NDQ1MGQwYTQzNmY2ZTc0NjU2ZTc0MmQ0YzY1NmU2Nzc0NjgzYTIwMzAwZDBhMGQwYT4KCltQZWVyXQpQdWJsaWNLZXkgPSBxaUtOV1ZQM2FTVitiZmdJeVU0eHNCdDFCeCtvK0FTa29KWmdpd3JheG1rPQpFbmRwb2ludCA9IDE5NC4xODAuMzMuMzo1MTgyMApBbGxvd2VkSVBzID0gMC4wLjAuMC8wLCA6Oi8wClBlcnNpc3RlbnRLZWVwYWxpdmUgPSAyNQo"
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [],
+        "enabled": false,
+        "routeOnly": false
+      },
+      "tag": "socks"
     }
-  ]
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "10m",
+    "probeUrl": "https://www.google.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "socks",
+      "settings": {
+        "servers": [
+          {
+            "address": "ch-zur.pvdata.host",
+            "level": 8,
+            "ota": false,
+            "port": 1080,
+            "users": [
+              {
+                "level": 8,
+                "pass": "1Telegram_MojiVPN",
+                "user": "N9cyF6jvgy3ZEmCNKe04zBIR"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.122.116",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Nl-say.zirakomamle.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "Nl-say.zirakomamle.com"
+          },
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "remarks": "Tesr",
+  "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "network": "udp",
+        "outboundTag": "block",
+        "port": "443",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "ext:geoip-only-cn-private.dat:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "domain:ir",
+          "geosite:category-ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "domestic-dns"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "inboundTag": [
+          "dns-module"
+        ],
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
+        "type": "field"
+      }
+    ]
+  }
 }
+
+amneziawg://W0ludGVyZmFjZV0KQWRkcmVzcyA9IDE3Mi4xNi4wLjIvMzIKQWRkcmVzcyA9IDI2MDY6NDcwMDoxMTA6OGUzNDpjNmQ3OjljYzk6Y2U1OmI0MS8xMjgKUHJpdmF0ZUtleSA9IDJIVE5kN05aK3pOdjJOQWdFRFRTTyttVXF2bHppek4xRXpSQ2E0dmYrV1E9Ck1UVSA9IDEyODAKSmMgPSA0CkptaW4gPSA0MApKbWF4ID0gNzAKSDEgPSAxCkgyID0gMgpIMyA9IDMKSDQgPSA0CkkxID0gPGIgMHg0OTRlNTY0OTU0NDUyMDczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDIwNTM0OTUwMmYzMjJlMzAwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTRkNjE3ODJkNDY2ZjcyNzc2MTcyNjQ3MzNhMjAzNzMwMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2MTYzNzQzYTIwM2M3MzY5NzAzYTYxNmM2OTYzNjU0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UwZDBhNDM2ZjZlNzQ2NTZlNzQyZDU0Nzk3MDY1M2EyMDYxNzA3MDZjNjk2MzYxNzQ2OTZmNmUyZjczNjQ3MDBkMGE0MzZmNmU3NDY1NmU3NDJkNGM2NTZlNjc3NDY4M2EyMDMwMGQwYTBkMGE-CkkyID0gPGIgMHg1MzQ5NTAyZjMyMmUzMDIwMzEzMDMwMjA1NDcyNzk2OTZlNjcwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgoKW1BlZXJdClB1YmxpY0tleSA9IGJtWE9DK0YxRnhFTUY5ZHlpSzJINS8xU1V0ekgwSnVWbzUxaDJ3UGZneW89CkVuZHBvaW50ID0gMTYyLjE1OS4xOTIuMToyNDA4CkFsbG93ZWRJUHMgPSAwLjAuMC4wLzAsIDo6LzAK#1
+amneziawg://W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjE4Ny4xOTIuNTAvMzAKUHJpdmF0ZUtleSA9IG1NdFMxeXZ3VkNpb0NTemVPZlJuVnZKdDN2a3NkVWhXc0VVUDFSS0Jya1E9Ck1UVSA9IDEyODAKSmMgPSA0CkptaW4gPSA0MApKbWF4ID0gNzAKSDEgPSAxCkgyID0gMgpIMyA9IDMKSDQgPSA0CkkxID0gPGIgMHg0OTRlNTY0OTU0NDUyMDczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDIwNTM0OTUwMmYzMjJlMzAwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTRkNjE3ODJkNDY2ZjcyNzc2MTcyNjQ3MzNhMjAzNzMwMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2MTYzNzQzYTIwM2M3MzY5NzAzYTYxNmM2OTYzNjU0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UwZDBhNDM2ZjZlNzQ2NTZlNzQyZDU0Nzk3MDY1M2EyMDYxNzA3MDZjNjk2MzYxNzQ2OTZmNmUyZjczNjQ3MDBkMGE0MzZmNmU3NDY1NmU3NDJkNGM2NTZlNjc3NDY4M2EyMDMwMGQwYTBkMGE-CkkyID0gPGIgMHg1MzQ5NTAyZjMyMmUzMDIwMzEzMDMwMjA1NDcyNzk2OTZlNjcwZDBhNTY2OTYxM2EyMDUzNDk1MDJmMzIyZTMwMmY1NTQ0NTAyMDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2I2MjcyNjE2ZTYzNjgzZDdhMzk2ODQ3MzQ2MjRiMzczNzM2NjE3MzY0Njg2NDczMGQwYTU0NmYzYTIwNDI2ZjYyMjAzYzczNjk3MDNhNjI2ZjYyNDA2MjY5NmM2Zjc4NjkyZTYzNmY2ZDNlMGQwYTQ2NzI2ZjZkM2EyMDQxNmM2OTYzNjUyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkM2UzYjc0NjE2NzNkMzEzOTMyMzgzMzMwMzEzNzM3MzQwZDBhNDM2MTZjNmMyZDQ5NDQzYTIwNjEzODM0NjIzNDYzMzczNjY1MzYzNjM3MzEzMDQwNzA2MzMzMzMyZTYxNzQ2YzYxNmU3NDYxMmU2MzZmNmQwZDBhNDM1MzY1NzEzYTIwMzMzMTM0MzEzNTM5MjA0OTRlNTY0OTU0NDUwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgoKW1BlZXJdClB1YmxpY0tleSA9IEZFdUVKb09ZczM4b1ZXQ3FoMXI1YVNwT3pkVmEvNG81OWJlQURLb21SR009CkVuZHBvaW50ID0gNTAuNy4xNTEuNjc6NDMyOTMKQWxsb3dlZElQcyA9IDAuMC4wLjAvMCwgOjovMApQZXJzaXN0ZW50S2VlcGFsaXZlID0gMTUwMAo#2
+amneziawg://W0ludGVyZmFjZV0KQWRkcmVzcyA9IDEwLjIuMC4yLzMyClByaXZhdGVLZXkgPSBTRU0vV0tWSVI2ODg0R3NsdXRIWkErN0VPODQzbVo4czNHaE9UTkpiU1ZFPQpNVFUgPSAxMjgwCkpjID0gNApKbWluID0gNDAKSm1heCA9IDcwCkgxID0gMQpIMiA9IDIKSDMgPSAzCkg0ID0gNApJMSA9IDxiIDB4NDk0ZTU2NDk1NDQ1MjA3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQyMDUzNDk1MDJmMzIyZTMwMGQwYTU2Njk2MTNhMjA1MzQ5NTAyZjMyMmUzMDJmNTU0NDUwMjA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNiNjI3MjYxNmU2MzY4M2Q3YTM5Njg0NzM0NjI0YjM3MzczNjYxNzM2NDY4NjQ3MzBkMGE0ZDYxNzgyZDQ2NmY3Mjc3NjE3MjY0NzMzYTIwMzczMDBkMGE1NDZmM2EyMDQyNmY2MjIwM2M3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQzZTBkMGE0NjcyNmY2ZDNhMjA0MTZjNjk2MzY1MjAzYzczNjk3MDNhNjE2YzY5NjM2NTQwNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlM2I3NDYxNjczZDMxMzkzMjM4MzMzMDMxMzczNzM0MGQwYTQzNjE2YzZjMmQ0OTQ0M2EyMDYxMzgzNDYyMzQ2MzM3MzY2NTM2MzYzNzMxMzA0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkMGQwYTQzNTM2NTcxM2EyMDMzMzEzNDMxMzUzOTIwNDk0ZTU2NDk1NDQ1MGQwYTQzNmY2ZTc0NjE2Mzc0M2EyMDNjNzM2OTcwM2E2MTZjNjk2MzY1NDA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlMGQwYTQzNmY2ZTc0NjU2ZTc0MmQ1NDc5NzA2NTNhMjA2MTcwNzA2YzY5NjM2MTc0Njk2ZjZlMmY3MzY0NzAwZDBhNDM2ZjZlNzQ2NTZlNzQyZDRjNjU2ZTY3NzQ2ODNhMjAzMDBkMGEwZDBhPgpJMiA9IDxiIDB4NTM0OTUwMmYzMjJlMzAyMDMxMzAzMDIwNTQ3Mjc5Njk2ZTY3MGQwYTU2Njk2MTNhMjA1MzQ5NTAyZjMyMmUzMDJmNTU0NDUwMjA3MDYzMzMzMzJlNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNiNjI3MjYxNmU2MzY4M2Q3YTM5Njg0NzM0NjI0YjM3MzczNjYxNzM2NDY4NjQ3MzBkMGE1NDZmM2EyMDQyNmY2MjIwM2M3MzY5NzAzYTYyNmY2MjQwNjI2OTZjNmY3ODY5MmU2MzZmNmQzZTBkMGE0NjcyNmY2ZDNhMjA0MTZjNjk2MzY1MjAzYzczNjk3MDNhNjE2YzY5NjM2NTQwNjE3NDZjNjE2ZTc0NjEyZTYzNmY2ZDNlM2I3NDYxNjczZDMxMzkzMjM4MzMzMDMxMzczNzM0MGQwYTQzNjE2YzZjMmQ0OTQ0M2EyMDYxMzgzNDYyMzQ2MzM3MzY2NTM2MzYzNzMxMzA0MDcwNjMzMzMzMmU2MTc0NmM2MTZlNzQ2MTJlNjM2ZjZkMGQwYTQzNTM2NTcxM2EyMDMzMzEzNDMxMzUzOTIwNDk0ZTU2NDk1NDQ1MGQwYTQzNmY2ZTc0NjU2ZTc0MmQ0YzY1NmU2Nzc0NjgzYTIwMzAwZDBhMGQwYT4KCltQZWVyXQpQdWJsaWNLZXkgPSBxaUtOV1ZQM2FTVitiZmdJeVU0eHNCdDFCeCtvK0FTa29KWmdpd3JheG1rPQpFbmRwb2ludCA9IDE5NC4xODAuMzMuMzo1MTgyMApBbGxvd2VkSVBzID0gMC4wLjAuMC8wLCA6Oi8wClBlcnNpc3RlbnRLZWVwYWxpdmUgPSAyNQo#3
