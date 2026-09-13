@@ -166,16 +166,17 @@
           "s4": 0
         },
         "dnsServers": [
-          "1.1.1.1"
+          "1.1.1.1",
+          "1.0.0.1"
         ],
-        "mtu": 1420,
+        "mtu": 1280,
         "peers": [
           {
             "allowedIPs": [
               "0.0.0.0/0",
               "::/0"
             ],
-            "endpoint": "engage.cloudflareclient.com:2408",
+            "endpoint": "162.159.192.1:2408",
             "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
           }
         ],
@@ -184,19 +185,7 @@
           0,
           0
         ],
-        "secretKey": "PTdjjwbWPYAaDOuKsYIvEu1PkAUu1s8CAZYYfwUE8WQ="
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        }
+        "secretKey": "4Ngv8edq1pZMYI7WthBAahoR5s6m5CLnEEjWNIuby0I="
       },
       "tag": "proxy-proxy-1-warp"
     },
