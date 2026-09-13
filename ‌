@@ -8,23 +8,49 @@
         "2400:3200::1",
         "2400:3200:baba::1"
       ],
+      "dns.sse.cisco.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
+      "dns.umbrella.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
       "one.one.one.one": [
         "1.1.1.1",
         "1.0.0.1",
         "2606:4700:4700::1111",
         "2606:4700:4700::1001"
       ],
+      "1dot1dot1dot1.cloudflare-dns.com": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
       "dns.cloudflare.com": [
-        "104.16.132.229",
-        "104.16.133.229",
-        "2606:4700::6810:84e5",
-        "2606:4700::6810:85e5"
+        "162.159.61.8",
+        "172.64.41.8",
+        "2a06:98c1:52::8",
+        "2803:f800:53::8"
       ],
       "cloudflare-dns.com": [
         "104.16.248.249",
         "104.16.249.249",
         "2606:4700::6810:f8f9",
         "2606:4700::6810:f9f9"
+      ],
+      "engage.cloudflareclient.com": [
+        "162.159.192.1",
+        "2606:4700:d0::a29f:c001"
+      ],
+      "doh.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
       ],
       "dot.pub": [
         "1.12.12.12",
@@ -42,20 +68,34 @@
         "2620:fe::fe",
         "2620:fe::9"
       ],
+      "dns.sb": [
+        "45.11.45.11",
+        "185.222.222.222",
+        "2a09::",
+        "2a11::"
+      ],
       "common.dot.dns.yandex.net": [
         "77.88.8.8",
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "www.speedtest.net": [
-        "104.17.147.22",
-        "104.17.148.22"
-      ],
-      "ffaarraannccee.poonehi.ir": "38.60.216.14"
+      "teyam3.daltoonserver.ir": "167.104.216.93",
+      "call209.aroonsid.ir": "77.72.18.100",
+      "fffrrrnnnccc.zanjiram.ir": "38.60.176.192",
+      "bool.zanjiram.ir": "38.54.27.191",
+      "singaaaaaap.zanjiram.ir": "38.54.17.154"
     },
     "servers": [
       "8.8.8.8",
+      {
+        "address": "8.4.4.8",
+        "domains": [
+          "geosite:private"
+        ],
+        "skipFallback": true,
+        "tag": "domestic-dns_0_0"
+      },
       {
         "address": "8.4.4.8",
         "domains": [
@@ -63,7 +103,7 @@
           "geosite:category-ir"
         ],
         "skipFallback": true,
-        "tag": "domestic-dns"
+        "tag": "domestic-dns_1_0"
       }
     ],
     "tag": "dns-module"
@@ -94,10 +134,533 @@
     "probeInterval": "10m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
-      "proxy-"
+      "proxy-proxy-"
     ]
   },
   "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "wireguard",
+      "settings": {
+        "address": [
+          "172.16.0.2/32"
+        ],
+        "amnezia": {
+          "disableCookieReplies": false,
+          "h1": "1",
+          "h2": "2",
+          "h3": "3",
+          "h4": "4",
+          "i1": "<b 0x494e56495445207369703a626f624062696c6f78692e636f6d205349502f322e300d0a5669613a205349502f322e302f55445020706333332e61746c616e74612e636f6d3b6272616e63683d7a39684734624b3737366173646864730d0a4d61782d466f7277617264733a2037300d0a546f3a20426f62203c7369703a626f624062696c6f78692e636f6d3e0d0a46726f6d3a20416c696365203c7369703a616c6963654061746c616e74612e636f6d3e3b7461673d313932383330313737340d0a43616c6c2d49443a20613834623463373665363637313040706333332e61746c616e74612e636f6d0d0a435365713a2033313431353920494e564954450d0a436f6e746163743a203c7369703a616c69636540706333332e61746c616e74612e636f6d3e0d0a436f6e74656e742d547970653a206170706c69636174696f6e2f7364700d0a436f6e74656e742d4c656e6774683a20300d0a0d0a>",
+          "i2": "<b 0x5349502f322e302031303020547279696e670d0a5669613a205349502f322e302f55445020706333332e61746c616e74612e636f6d3b6272616e63683d7a39684734624b3737366173646864730d0a546f3a20426f62203c7369703a626f624062696c6f78692e636f6d3e0d0a46726f6d3a20416c696365203c7369703a616c6963654061746c616e74612e636f6d3e3b7461673d313932383330313737340d0a43616c6c2d49443a20613834623463373665363637313040706333332e61746c616e74612e636f6d0d0a435365713a2033313431353920494e564954450d0a436f6e74656e742d4c656e6774683a20300d0a0d0a>",
+          "jc": 4,
+          "jmax": 70,
+          "jmin": 40,
+          "randomizePacketTrailers": false,
+          "s1": 0,
+          "s2": 0,
+          "s3": 0,
+          "s4": 0
+        },
+        "dnsServers": [
+          "1.1.1.1"
+        ],
+        "mtu": 1420,
+        "peers": [
+          {
+            "allowedIPs": [
+              "0.0.0.0/0",
+              "::/0"
+            ],
+            "endpoint": "engage.cloudflareclient.com:2408",
+            "publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+          }
+        ],
+        "reserved": [
+          0,
+          0,
+          0
+        ],
+        "secretKey": "PTdjjwbWPYAaDOuKsYIvEu1PkAUu1s8CAZYYfwUE8WQ="
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-proxy-1-warp"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "teyam3.daltoonserver.ir",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "079fa84e-5319-4d11-a7ab-2fe28d30fbf8",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "host": "updates.cdn-apple.com",
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-2-irancell 1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.198",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Nl-say.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Nl-say.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-3-irancell 12"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "call209.aroonsid.ir",
+            "port": 8880,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "81029c67-9215-47b9-98b5-06fb703ea381",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-4-irancell 20"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "teyam3.daltoonserver.ir",
+            "port": 8989,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a9589fb5-9d51-423a-b99e-57669a5d9598",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "5DVeaUVfUfD6bRT6pMDiRa70i6m1NrNp8tFNS9xf4yo",
+          "serverName": "s6-sms-cdn.ecom-stg.samsung.con",
+          "shortId": "1bccaa59b5b1",
+          "spiderX": "/50d2a343eff962f"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "xhttpSettings": {
+          "host": "",
+          "mode": "auto",
+          "path": "/"
+        }
+      },
+      "tag": "proxy-proxy-5-irancell 4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "teyam3.daltoonserver.ir",
+            "port": 8182,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7b57520c-858c-428d-81e6-c3652f70a6ca",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-6-irancell 21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "663c5ce6-f2d2-4310-8ef2-4eeecfab30f1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "pariskocholo.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "pariskocholo.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-7-irancell 5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "teyam3.daltoonserver.ir",
+            "port": 8182,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "fa4cb73e-9b2d-4661-8e19-51448d7d9708",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-proxy-8-irancell 3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fffrrrnnnccc.zanjiram.ir",
+            "port": 34233,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "77754fd6-6217-49be-82ac-d3490693586c",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-9-irancell 2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.122.116",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Nl-say.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Nl-say.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-10-irancell 14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.198",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Uksayhello.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Uksayhello.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-11-irancell 7"
+    },
     {
       "mux": {
         "concurrency": -1,
@@ -128,235 +691,14 @@
             "http/1.1"
           ],
           "fingerprint": "chrome",
-          "serverName": "pariskocholo.zirakomamle.com",
-          "show": false
+          "serverName": "pariskocholo.zirakomamle.com"
         },
         "wsSettings": {
-          "headers": {
-            "Host": "pariskocholo.zirakomamle.com"
-          },
+          "host": "pariskocholo.zirakomamle.com",
           "path": "/grapql/?ed=2560"
         }
       },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b91c0d18-ba4e-4f4c-802d-535b71c7024f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "sooed.poonehi.ir",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sooed.poonehi.ir"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ffaarraannccee.poonehi.ir",
-            "port": 50663,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "852ca2fd-a67a-4fd1-8cf4-815aa079b44e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "xhttpSettings": {
-          "host": "",
-          "mode": "auto",
-          "path": "/"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.122.116",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "663c5ce6-f2d2-4310-8ef2-4eeecfab30f1",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "pariskocholo.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "pariskocholo.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.251",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "663c5ce6-f2d2-4310-8ef2-4eeecfab30f1",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "pariskocholo.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "pariskocholo.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.251",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-6"
+      "tag": "proxy-proxy-12-irancell 6"
     },
     {
       "mux": {
@@ -388,17 +730,131 @@
             "http/1.1"
           ],
           "fingerprint": "chrome",
-          "serverName": "Nl-say.zirakomamle.com",
-          "show": false
+          "serverName": "Nl-say.zirakomamle.com"
         },
         "wsSettings": {
-          "headers": {
-            "Host": "Nl-say.zirakomamle.com"
-          },
+          "host": "Nl-say.zirakomamle.com",
           "path": "/grapql/?ed=2560"
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-proxy-13-irancell 16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1a0b9c1f-3cf7-4f15-82a6-479ce1fb31ee",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "afinland.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "afinland.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-14-irancell 11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Uksayhello.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Uksayhello.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-15-irancell 22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Nl-say.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Nl-say.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-16-irancell 18"
     },
     {
       "mux": {
@@ -430,17 +886,14 @@
             "http/1.1"
           ],
           "fingerprint": "chrome",
-          "serverName": "afinland.zirakomamle.com",
-          "show": false
+          "serverName": "afinland.zirakomamle.com"
         },
         "wsSettings": {
-          "headers": {
-            "Host": "afinland.zirakomamle.com"
-          },
+          "host": "afinland.zirakomamle.com",
           "path": "/grapql/?ed=2560"
         }
       },
-      "tag": "proxy-8"
+      "tag": "proxy-proxy-17-irancell 23"
     },
     {
       "mux": {
@@ -451,12 +904,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.122.116",
-            "port": 2053,
+            "address": "bool.zanjiram.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "id": "388c1709-a99e-43b2-9a44-d1a26723f06f",
                 "level": 8
               }
             ]
@@ -464,92 +917,16 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
+        "network": "tcp",
+        "realitySettings": {
           "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
           "fingerprint": "chrome",
-          "serverName": "Nl-say.zirakomamle.com",
-          "show": false
+          "publicKey": "1MyCinwmzIxVfMakGMaoUVHpssi0iAQtf-DmlgRO0U8",
+          "serverName": "www.amazonaws-china.com",
+          "shortId": "2dc75d",
+          "spiderX": "/66cbf3771d3f572"
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "Nl-say.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Nl-say.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Nl-say.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2087,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "b91c0d18-ba4e-4f4c-802d-535b71c7024f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
+        "security": "reality",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -559,351 +936,256 @@
             "tryDelayMs": 250
           }
         },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "sooed.poonehi.ir",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "sooed.poonehi.ir"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.251",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1a0b9c1f-3cf7-4f15-82a6-479ce1fb31ee",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "afinland.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "afinland.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.122.116",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "1a0b9c1f-3cf7-4f15-82a6-479ce1fb31ee",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "afinland.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "afinland.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.251",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Nl-say.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Nl-say.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.17.122.116",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Uksayhello.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "Uksayhello.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-16"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.16.72.251",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "37949317-3b40-42e5-9778-529006bcd520",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "usasaro.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "usasaro.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-17"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.130.125.198",
-            "port": 2053,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "37949317-3b40-42e5-9778-529006bcd520",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "usasaro.zirakomamle.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "usasaro.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
-        }
-      },
-      "tag": "proxy-18"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.250.38.62",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "7IGvbYdEsIZCEUme7OSrDp",
-            "port": 2342
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
         "tcpSettings": {
           "header": {
             "type": "none"
           }
         }
       },
-      "tag": "proxy-19"
+      "tag": "proxy-proxy-18-irancell 9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.122.116",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "411c455b-693b-425f-9dc5-83e33c47317f",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "Uksayhello.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "Uksayhello.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-19-irancell 10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.122.116",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "663c5ce6-f2d2-4310-8ef2-4eeecfab30f1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "pariskocholo.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "pariskocholo.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-20-irancell 8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.130.125.198",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "37949317-3b40-42e5-9778-529006bcd520",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "usasaro.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "usasaro.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-21-irancell 15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.17.122.116",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "1a0b9c1f-3cf7-4f15-82a6-479ce1fb31ee",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "afinland.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "afinland.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-22-irancell 13"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.72.251",
+            "port": 2053,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "37949317-3b40-42e5-9778-529006bcd520",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "usasaro.zirakomamle.com"
+        },
+        "wsSettings": {
+          "host": "usasaro.zirakomamle.com",
+          "path": "/grapql/?ed=2560"
+        }
+      },
+      "tag": "proxy-proxy-23-irancell 19"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "singaaaaaap.zanjiram.ir",
+            "port": 50067,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "7cc33ecb-eb08-4d32-847f-cb1e1b3dea4d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-24-irancell 17"
     },
     {
       "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP"
+        }
       },
       "tag": "direct"
     },
@@ -917,17 +1199,31 @@
       "tag": "block"
     }
   ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
   "remarks": "⭐️",
   "routing": {
     "balancers": [
       {
         "selector": [
-          "proxy-"
+          "proxy-proxy-"
         ],
         "strategy": {
           "type": "leastPing"
         },
-        "tag": "proxy-round"
+        "tag": "balancer-main"
       }
     ],
     "domainStrategy": "AsIs",
@@ -940,7 +1236,7 @@
       },
       {
         "ip": [
-          "ext:geoip-only-cn-private.dat:private"
+          "geoip:private"
         ],
         "outboundTag": "direct",
         "type": "field"
@@ -969,23 +1265,25 @@
       },
       {
         "inboundTag": [
-          "domestic-dns"
+          "domestic-dns_0_0",
+          "domestic-dns_1_0"
         ],
         "outboundTag": "direct",
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
+        "balancerTag": "balancer-main",
         "inboundTag": [
           "dns-module"
         ],
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
+        "balancerTag": "balancer-main",
         "network": "tcp,udp",
         "type": "field"
       }
     ]
-  }
+  },
+  "stats": {}
 }
