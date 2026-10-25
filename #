@@ -1,4 +1,5 @@
 {
+  "_comment": "2026-10-25T11:16:00",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -80,12 +81,7 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "digitalocean.com": [
-        "104.19.173.68",
-        "104.19.174.68"
-      ],
-      "fransse.poonehi.ir": "38.60.136.233",
-      "cinnnfbul.poonehi.ir": "94.156.174.29"
+      "fsxhh1.eorqen.ir": "167.82.76.31"
     },
     "servers": [
       "8.8.8.8",
@@ -132,7 +128,7 @@
   },
   "observatory": {
     "enableConcurrency": true,
-    "probeInterval": "3m",
+    "probeInterval": "10m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
       "proxy-proxy-"
@@ -144,16 +140,324 @@
         "concurrency": -1,
         "enabled": false
       },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.174",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 31222
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-1-MobileTina 1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.174",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 31201
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-2-MobileTina 2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.134",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3124
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-3-MobileTina 3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.144.195",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "m3jylwyudp0c07f3",
+            "port": 36543
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-4-MobileTina 4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.133",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3128
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-5-MobileTina 5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.133",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3125
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-6-MobileTina 6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.144.195",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3138
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-7-MobileTina 7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.134",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3123
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-8-MobileTina 8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.144.195",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "wdqb9hwvobwul0tk",
+            "port": 3129
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-9-MobileTina 9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.133",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3127
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-10-MobileTina 10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.60.146.133",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "7xyvulhizpxc6edf",
+            "port": 3126
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-11-MobileTina 11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "digitalocean.com",
-            "port": 2087,
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "e7caf603-ecd2-4338-a7d8-985dcd0d5ba1",
+                "id": "1d3fffcc-1b37-4b40-97f3-9fed17704af7",
                 "level": 8
               }
             ]
@@ -175,19 +479,22 @@
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
-            "h2",
-            "http/1.1"
+            "h2"
           ],
-          "fingerprint": "chrome",
-          "serverName": "cinnnfbul.poonehi.ir"
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
         },
         "xhttpSettings": {
-          "host": "cinnnfbul.poonehi.ir",
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicD-E-services.global.ssl.fastly.net",
           "mode": "auto",
-          "path": "/"
+          "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-proxy-1-همه اپراتور ها 🇧🇬 Bulgaria"
+      "tag": "proxy-proxy-12-MobileTina 12"
     },
     {
       "mux": {
@@ -198,12 +505,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "digitalocean.com",
-            "port": 2087,
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "4bdeb884-afd9-4bac-9a81-89a9f5f4003d",
+                "id": "439119b2-d22c-4ca0-8b33-697ad4369d8c",
                 "level": 8
               }
             ]
@@ -225,19 +532,22 @@
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
-            "h2",
-            "http/1.1"
+            "h2"
           ],
-          "fingerprint": "chrome",
-          "serverName": "ssooed.poonehi.ir"
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
         },
         "xhttpSettings": {
-          "host": "ssooed.poonehi.ir",
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicU-K-services.global.ssl.fastly.net",
           "mode": "auto",
-          "path": "/"
+          "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-proxy-2-🇸🇪 Sweden همه اپراتورها"
+      "tag": "proxy-proxy-13-MobileTina 13"
     },
     {
       "mux": {
@@ -248,12 +558,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "digitalocean.com",
-            "port": 2087,
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "941cbafb-6e51-478d-b17e-a5bc02361972",
+                "id": "439119b2-d22c-4ca0-8b33-697ad4369d8c",
                 "level": 8
               }
             ]
@@ -275,19 +585,22 @@
         "tlsSettings": {
           "allowInsecure": false,
           "alpn": [
-            "h2",
-            "http/1.1"
+            "h2"
           ],
-          "fingerprint": "chrome",
-          "serverName": "fransse.poonehi.ir"
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
         },
         "xhttpSettings": {
-          "host": "fransse.poonehi.ir",
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicN-L-services.global.ssl.fastly.net",
           "mode": "auto",
-          "path": "/"
+          "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-proxy-3-🇫🇷 France همراه اول"
+      "tag": "proxy-proxy-14-MobileTina 14"
     },
     {
       "mux": {
@@ -298,52 +611,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "fransse.poonehi.ir",
-            "port": 14209,
-            "users": [
-              {
-                "encryption": "mlkem768x25519plus.native.0rtt.XzmdmliPz_Ixzvti7cZVOikvzkvtI4yBDcXwJsgCEHY",
-                "id": "915275fa-2f17-485c-9c97-1ed9ce09295f",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-proxy-4-🇫🇷 France ایرانسل"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "fransse.poonehi.ir",
-            "port": 44932,
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "5a0fddf4-9e66-4076-9b76-b2b733d58668",
+                "id": "439119b2-d22c-4ca0-8b33-697ad4369d8c",
                 "level": 8
               }
             ]
@@ -351,7 +624,8 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "xhttp",
+        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -361,13 +635,25 @@
             "tryDelayMs": 250
           }
         },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicU-S-A-services.global.ssl.fastly.net",
+          "mode": "auto",
+          "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-proxy-5-🇫🇷 France ایرانسل2"
+      "tag": "proxy-proxy-15-MobileTina 15"
     },
     {
       "mux": {
@@ -378,52 +664,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "cinnnfbul.poonehi.ir",
-            "port": 31998,
-            "users": [
-              {
-                "encryption": "mlkem768x25519plus.native.0rtt.txy-Z5mjIesepI6DeacyxKfhUlFVDbLoXP_yZbyoFn4",
-                "id": "923392dd-39f8-4fda-9915-d60967b7b782",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-proxy-6-🇧🇬Bulgaria2  2ایرانسل"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "cinnnfbul.poonehi.ir",
-            "port": 30382,
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "9dd0c0cd-d279-4a6d-bdbb-6b6e6ca8130a",
+                "id": "439119b2-d22c-4ca0-8b33-697ad4369d8c",
                 "level": 8
               }
             ]
@@ -431,7 +677,8 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "network": "xhttp",
+        "security": "tls",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -441,13 +688,78 @@
             "tryDelayMs": 250
           }
         },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicF-N-services.global.ssl.fastly.net",
+          "mode": "auto",
+          "path": "/?ed=2048"
         }
       },
-      "tag": "proxy-proxy-7-🇧🇬Bulgaria  2ایرانسل"
+      "tag": "proxy-proxy-16-MobileTina 16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fsxhh1.eorqen.ir",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "439119b2-d22c-4ca0-8b33-697ad4369d8c",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2"
+          ],
+          "fingerprint": "safari",
+          "serverName": "speedtest.net"
+        },
+        "xhttpSettings": {
+          "extra": {
+            "mode": "auto",
+            "xPaddingBytes": "100-1000"
+          },
+          "host": "classicF-R-services.global.ssl.fastly.net",
+          "mode": "auto",
+          "path": "/?ed=2048"
+        }
+      },
+      "tag": "proxy-proxy-17-MobileTina 17"
     },
     {
       "protocol": "freedom",
@@ -483,7 +795,7 @@
       "statsOutboundDownlink": true
     }
   },
-  "remarks": ".",
+  "remarks": "test",
   "routing": {
     "balancers": [
       {
