@@ -1,5 +1,4 @@
 {
-  "_comment": "2026-09-06T11:23:00",
   "dns": {
     "hosts": {
       "domain:googleapis.cn": "googleapis.com",
@@ -9,23 +8,49 @@
         "2400:3200::1",
         "2400:3200:baba::1"
       ],
+      "dns.sse.cisco.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
+      "dns.umbrella.com": [
+        "208.67.220.220",
+        "208.67.222.222",
+        "2620:119:35::35",
+        "2620:119:53::53"
+      ],
       "one.one.one.one": [
         "1.1.1.1",
         "1.0.0.1",
         "2606:4700:4700::1111",
         "2606:4700:4700::1001"
       ],
+      "1dot1dot1dot1.cloudflare-dns.com": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
       "dns.cloudflare.com": [
-        "104.16.132.229",
-        "104.16.133.229",
-        "2606:4700::6810:84e5",
-        "2606:4700::6810:85e5"
+        "162.159.61.8",
+        "172.64.41.8",
+        "2a06:98c1:52::8",
+        "2803:f800:53::8"
       ],
       "cloudflare-dns.com": [
         "104.16.248.249",
         "104.16.249.249",
         "2606:4700::6810:f8f9",
         "2606:4700::6810:f9f9"
+      ],
+      "engage.cloudflareclient.com": [
+        "162.159.192.1",
+        "2606:4700:d0::a29f:c001"
+      ],
+      "doh.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
       ],
       "dot.pub": [
         "1.12.12.12",
@@ -43,19 +68,35 @@
         "2620:fe::fe",
         "2620:fe::9"
       ],
+      "dns.sb": [
+        "45.11.45.11",
+        "185.222.222.222",
+        "2a09::",
+        "2a11::"
+      ],
       "common.dot.dns.yandex.net": [
         "77.88.8.8",
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "ch-zur.pvdata.host": [
-        "45.148.4.3",
-        "80.239.178.125"
-      ]
+      "digitalocean.com": [
+        "104.19.173.68",
+        "104.19.174.68"
+      ],
+      "fransse.poonehi.ir": "38.60.136.233",
+      "cinnnfbul.poonehi.ir": "94.156.174.29"
     },
     "servers": [
       "8.8.8.8",
+      {
+        "address": "8.4.4.8",
+        "domains": [
+          "geosite:private"
+        ],
+        "skipFallback": true,
+        "tag": "domestic-dns_0_0"
+      },
       {
         "address": "8.4.4.8",
         "domains": [
@@ -63,7 +104,7 @@
           "geosite:category-ir"
         ],
         "skipFallback": true,
-        "tag": "domestic-dns"
+        "tag": "domestic-dns_1_0"
       }
     ],
     "tag": "dns-module"
@@ -91,10 +132,10 @@
   },
   "observatory": {
     "enableConcurrency": true,
-    "probeInterval": "10m",
+    "probeInterval": "3m",
     "probeUrl": "https://www.google.com/generate_204",
     "subjectSelector": [
-      "proxy-"
+      "proxy-proxy-"
     ]
   },
   "outbounds": [
@@ -103,19 +144,167 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "socks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "ch-zur.pvdata.host",
-            "level": 8,
-            "ota": false,
-            "port": 1080,
+            "address": "digitalocean.com",
+            "port": 2087,
             "users": [
               {
-                "level": 8,
-                "pass": "1Telegram_MojiVPN",
-                "user": "N9cyF6jvgy3ZEmCNKe04zBIR"
+                "encryption": "none",
+                "id": "e7caf603-ecd2-4338-a7d8-985dcd0d5ba1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "cinnnfbul.poonehi.ir"
+        },
+        "xhttpSettings": {
+          "host": "cinnnfbul.poonehi.ir",
+          "mode": "auto",
+          "path": "/"
+        }
+      },
+      "tag": "proxy-proxy-1-همه اپراتور ها 🇧🇬 Bulgaria"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "digitalocean.com",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "4bdeb884-afd9-4bac-9a81-89a9f5f4003d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "ssooed.poonehi.ir"
+        },
+        "xhttpSettings": {
+          "host": "ssooed.poonehi.ir",
+          "mode": "auto",
+          "path": "/"
+        }
+      },
+      "tag": "proxy-proxy-2-🇸🇪 Sweden همه اپراتورها"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "digitalocean.com",
+            "port": 2087,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "941cbafb-6e51-478d-b17e-a5bc02361972",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "fransse.poonehi.ir"
+        },
+        "xhttpSettings": {
+          "host": "fransse.poonehi.ir",
+          "mode": "auto",
+          "path": "/"
+        }
+      },
+      "tag": "proxy-proxy-3-🇫🇷 France همراه اول"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fransse.poonehi.ir",
+            "port": 14209,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.XzmdmliPz_Ixzvti7cZVOikvzkvtI4yBDcXwJsgCEHY",
+                "id": "915275fa-2f17-485c-9c97-1ed9ce09295f",
+                "level": 8
               }
             ]
           }
@@ -131,9 +320,14 @@
             "prioritizeIPv6": false,
             "tryDelayMs": 250
           }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
-      "tag": "proxy-1"
+      "tag": "proxy-proxy-4-🇫🇷 France ایرانسل"
     },
     {
       "mux": {
@@ -144,13 +338,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.17.122.116",
-            "port": 2053,
+            "address": "fransse.poonehi.ir",
+            "port": 44932,
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
-                "id": "5265360d-e90e-4d7a-b3b0-3ea94e00bcda",
+                "id": "5a0fddf4-9e66-4076-9b76-b2b733d58668",
                 "level": 8
               }
             ]
@@ -158,30 +351,111 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "alpn": [
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "serverName": "Nl-say.zirakomamle.com",
-          "show": false
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
         },
-        "wsSettings": {
-          "headers": {
-            "Host": "Nl-say.zirakomamle.com"
-          },
-          "path": "/grapql/?ed=2560"
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
         }
       },
-      "tag": "proxy-2"
+      "tag": "proxy-proxy-5-🇫🇷 France ایرانسل2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cinnnfbul.poonehi.ir",
+            "port": 31998,
+            "users": [
+              {
+                "encryption": "mlkem768x25519plus.native.0rtt.txy-Z5mjIesepI6DeacyxKfhUlFVDbLoXP_yZbyoFn4",
+                "id": "923392dd-39f8-4fda-9915-d60967b7b782",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-6-🇧🇬Bulgaria2  2ایرانسل"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cinnnfbul.poonehi.ir",
+            "port": 30382,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "9dd0c0cd-d279-4a6d-bdbb-6b6e6ca8130a",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-proxy-7-🇧🇬Bulgaria  2ایرانسل"
     },
     {
       "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
+      "streamSettings": {
+        "network": "tcp",
+        "sockopt": {
+          "domainStrategy": "UseIP"
+        }
       },
       "tag": "direct"
     },
@@ -195,17 +469,31 @@
       "tag": "block"
     }
   ],
-  "remarks": "Tesr",
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "remarks": ".",
   "routing": {
     "balancers": [
       {
         "selector": [
-          "proxy-"
+          "proxy-proxy-"
         ],
         "strategy": {
           "type": "leastPing"
         },
-        "tag": "proxy-round"
+        "tag": "balancer-main"
       }
     ],
     "domainStrategy": "AsIs",
@@ -218,7 +506,7 @@
       },
       {
         "ip": [
-          "ext:geoip-only-cn-private.dat:private"
+          "geoip:private"
         ],
         "outboundTag": "direct",
         "type": "field"
@@ -247,23 +535,25 @@
       },
       {
         "inboundTag": [
-          "domestic-dns"
+          "domestic-dns_0_0",
+          "domestic-dns_1_0"
         ],
         "outboundTag": "direct",
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
+        "balancerTag": "balancer-main",
         "inboundTag": [
           "dns-module"
         ],
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
+        "balancerTag": "balancer-main",
         "network": "tcp,udp",
         "type": "field"
       }
     ]
-  }
+  },
+  "stats": {}
 }
